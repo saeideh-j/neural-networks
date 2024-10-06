@@ -6,7 +6,7 @@ def softmax(logits):
     sum_exp_logits = sum(exp_logit for exp_logit in exp_logits)
     out = [exp_logit / sum_exp_logits for exp_logit in exp_logits]
     return out
-
+#test
 # Negative log likelihood loss function
 def negative_log_likelihood(logits, label):
     probs = softmax(logits)
